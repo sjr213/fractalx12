@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4f468922-1005-4b3e-a2ef-9561f42dc59c}</ProjectGuid>
+    <RootNamespace>DxSupport12</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>..\DxColors;..\DxCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Dwrite.lib;D2d1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\DxColors;..\DxCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Dwrite.lib;D2d1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BackgroundModelFactory.h" />
+    <ClInclude Include="BackgroundVertexData.h" />
+    <ClInclude Include="BasicRayTracer.h" />
+    <ClInclude Include="BulbNormalizeType.h" />
+    <ClInclude Include="CartesianConversionType.h" />
+    <ClInclude Include="CartesianConverterFactory.h" />
+    <ClInclude Include="CartesianConverterGroup.h" />
+    <ClInclude Include="ColorUtil.h" />
+    <ClInclude Include="Core12.h" />
+    <ClInclude Include="Core12Base.h" />
+    <ClInclude Include="d3dUtil.h" />
+    <ClInclude Include="d3dx12.h" />
+    <ClInclude Include="DDSTextureLoader.h" />
+    <ClInclude Include="DefaultFields.h" />
+    <ClInclude Include="DoubleRayTracer.h" />
+    <ClInclude Include="Dx12CoordinateMap.h" />
+    <ClInclude Include="Dx12TextureMapper.h" />
+    <ClInclude Include="DxEffectColors.h" />
+    <ClInclude Include="DxException.h" />
+    <ClInclude Include="DxfColorFactory.h" />
+    <ClInclude Include="DxLight.h" />
+    <ClInclude Include="DxSerialize.h" />
+    <ClInclude Include="FractalType.h" />
+    <ClInclude Include="FrameResourceFx.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="GeometryGenerator.h" />
+    <ClInclude Include="Ingles3EquantionType.h" />
+    <ClInclude Include="InglesRayTracer.h" />
+    <ClInclude Include="InglesRayTracer2.h" />
+    <ClInclude Include="InglesRayTracer3.h" />
+    <ClInclude Include="IRayTracer.h" />
+    <ClInclude Include="MathFunctions.h" />
+    <ClInclude Include="MathHelper.h" />
+    <ClInclude Include="ModelData.h" />
+    <ClInclude Include="MyDxHelpers.h" />
+    <ClInclude Include="MyDxUtil.h" />
+    <ClInclude Include="OriginTarget.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Perspective.h" />
+    <ClInclude Include="QuaternionEquationType.h" />
+    <ClInclude Include="QuaternionGeneralRayTracer.h" />
+    <ClInclude Include="QuaternionExperimentalRayTracer.h" />
+    <ClInclude Include="QuaternionRayTracer.h" />
+    <ClInclude Include="RayTracerCommon.h" />
+    <ClInclude Include="RectangleApproximator.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RendererDx12.h" />
+    <ClInclude Include="RotationGroup.h" />
+    <ClInclude Include="RotationParams.h" />
+    <ClInclude Include="RotationSelectionType.h" />
+    <ClInclude Include="SeedTriangles.h" />
+    <ClInclude Include="ShadowWorldType.h" />
+    <ClInclude Include="SphereApproximator.h" />
+    <ClInclude Include="StepTimer.h" />
+    <ClInclude Include="TraceParams.h" />
+    <ClInclude Include="TraceParamsSerialize.h" />
+    <ClInclude Include="TriangleData.h" />
+    <ClInclude Include="TriangleLoader.h" />
+    <ClInclude Include="TrigOption.h" />
+    <ClInclude Include="UploadBuffer.h" />
+    <ClInclude Include="Vector2Double.h" />
+    <ClInclude Include="Vector3Double.h" />
+    <ClInclude Include="Vector4Double.h" />
+    <ClInclude Include="VectorUtils.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="VertexData.h" />
+    <ClInclude Include="vertexFactory.h" />
+    <ClInclude Include="VertexSerialization.h" />
+    <ClInclude Include="VertexSource.h" />
+    <ClInclude Include="VertexStatistics.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BackgroundModelFactory.cpp" />
+    <ClCompile Include="BasicRayTracer.cpp" />
+    <ClCompile Include="BulbNormalizeType.cpp" />
+    <ClCompile Include="CartesianConversionType.cpp" />
+    <ClCompile Include="CartesianConverterFactory.cpp" />
+    <ClCompile Include="CartesianConverterGroup.cpp" />
+    <ClCompile Include="ColorUtil.cpp" />
+    <ClCompile Include="Core12.cpp" />
+    <ClCompile Include="Core12Base.cpp" />
+    <ClCompile Include="d3dUtil.cpp" />
+    <ClCompile Include="DDSTextureLoader.cpp" />
+    <ClCompile Include="DefaultFields.cpp" />
+    <ClCompile Include="DoubleRayTracer.cpp" />
+    <ClCompile Include="Dx12CoordinateMap.cpp" />
+    <ClCompile Include="Dx12TextureMapper.cpp" />
+    <ClCompile Include="DxException.cpp" />
+    <ClCompile Include="DxfColorFactory.cpp" />
+    <ClCompile Include="DxSerialize.cpp" />
+    <ClCompile Include="DxSupport12.cpp" />
+    <ClCompile Include="FractalType.cpp" />
+    <ClCompile Include="FrameResourceFx.cpp" />
+    <ClCompile Include="GeometryGenerator.cpp" />
+    <ClCompile Include="Ingles3EquantionType.cpp" />
+    <ClCompile Include="InglesRayTracer.cpp" />
+    <ClCompile Include="InglesRayTracer2.cpp" />
+    <ClCompile Include="InglesRayTracer3.cpp" />
+    <ClCompile Include="MathFunctions.cpp" />
+    <ClCompile Include="MathHelper.cpp" />
+    <ClCompile Include="ModelData.cpp" />
+    <ClCompile Include="MyDxHelpers.cpp" />
+    <ClCompile Include="MyDxUtil.cpp" />
+    <ClCompile Include="OriginTarget.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="QuaternionEquationType.cpp" />
+    <ClCompile Include="QuaternionGeneralRayTracer.cpp" />
+    <ClCompile Include="QuaternionExperimentalRayTracer.cpp" />
+    <ClCompile Include="QuaternionRayTracer.cpp" />
+    <ClCompile Include="RayTracerCommon.cpp" />
+    <ClCompile Include="RayTracerDoubleCommon.cpp" />
+    <ClCompile Include="RectangleApproximator.cpp" />
+    <ClCompile Include="RendererDx12.cpp" />
+    <ClCompile Include="RotationParams.cpp" />
+    <ClCompile Include="RotationSelectionType.cpp" />
+    <ClCompile Include="SeedTriangles.cpp" />
+    <ClCompile Include="ShadowWorldType.cpp" />
+    <ClCompile Include="SphereApproximator.cpp" />
+    <ClCompile Include="TraceParams.cpp" />
+    <ClCompile Include="TraceParamsSerialize.cpp" />
+    <ClCompile Include="TriangleLoader.cpp" />
+    <ClCompile Include="TrigOption.cpp" />
+    <ClCompile Include="Vector2Double.cpp" />
+    <ClCompile Include="Vector3Double.cpp" />
+    <ClCompile Include="Vector4Double.cpp" />
+    <ClCompile Include="VectorUtils.cpp" />
+    <ClCompile Include="vertexFactory.cpp" />
+    <ClCompile Include="VertexSource.cpp" />
+    <ClCompile Include="VertexStatistics.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\directxtk12_desktop_2017.2021.11.8.1\build\native\directxtk12_desktop_2017.targets" Condition="Exists('..\packages\directxtk12_desktop_2017.2021.11.8.1\build\native\directxtk12_desktop_2017.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\directxtk12_desktop_2017.2021.11.8.1\build\native\directxtk12_desktop_2017.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\directxtk12_desktop_2017.2021.11.8.1\build\native\directxtk12_desktop_2017.targets'))" />
+  </Target>
+</Project>
