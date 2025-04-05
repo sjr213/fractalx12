@@ -5,7 +5,7 @@
 #include "d3dUtil.h"
 #include <d3d11on12.h>
 #include <dwrite.h>
-#include <../packages/directxtk12_desktop_2017.2021.11.8.1/include/ScreenGrab.h>
+#include <ScreenGrab.h>
 #include <wincodec.h>
 
 using Microsoft::WRL::ComPtr;

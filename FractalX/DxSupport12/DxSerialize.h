@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include <../packages/directxtk12_desktop_2017.2021.11.8.1/include/VertexTypes.h>
+#include <VertexTypes.h>
 
 namespace DirectX
 {
